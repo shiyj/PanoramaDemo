@@ -86,6 +86,9 @@ static const CGFloat CRMotionViewRotationFactor = 1.0f;
     
     _motionRate = _image.size.width / _viewFrame.size.width * CRMotionViewRotationFactor;
     _maximumXOffset = _scrollView.contentSize.width - _scrollView.frame.size.width;
+    if (_maximumXOffset < 0) {
+        _maximumXOffset = 0;
+    }
 }
 
 - (void)setMotionEnabled:(BOOL)motionEnabled
