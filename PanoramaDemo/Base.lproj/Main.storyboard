@@ -21,23 +21,26 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toc-cU-V8S">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="213" id="HX5-Po-6ra"/>
-                                    <constraint firstAttribute="height" constant="30" id="eHH-Uu-G7M"/>
+                                    <constraint firstAttribute="height" constant="44" id="eHH-Uu-G7M"/>
                                 </constraints>
-                                <state key="normal" title="陀螺仪测试"/>
+                                <state key="normal" title="广角正全景测试"/>
                                 <connections>
-                                    <action selector="gyroPositionTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIb-Ae-AuS"/>
+                                    <action selector="plainTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="knT-Hx-ap1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08d-eH-shl">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="213" id="mLN-G7-0vj"/>
-                                    <constraint firstAttribute="height" constant="30" id="noV-mz-yX6"/>
+                                    <constraint firstAttribute="height" constant="44" id="noV-mz-yX6"/>
                                 </constraints>
                                 <state key="normal" title="中心全景测试"/>
+                                <connections>
+                                    <action selector="panoramaTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0h0-1o-tda"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPL-VO-VaF">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="OGe-BF-uHR"/>
+                                    <constraint firstAttribute="height" constant="44" id="OGe-BF-uHR"/>
                                     <constraint firstAttribute="width" constant="213" id="Wn8-Bn-HXm"/>
                                 </constraints>
                                 <state key="normal" title="环绕全景测试"/>
@@ -45,7 +48,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpC-PW-8jV">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="213" id="58w-DQ-fSQ"/>
-                                    <constraint firstAttribute="height" constant="30" id="8Em-R6-pZc"/>
+                                    <constraint firstAttribute="height" constant="44" id="8Em-R6-pZc"/>
                                 </constraints>
                                 <state key="normal" title="图片组测试"/>
                             </button>

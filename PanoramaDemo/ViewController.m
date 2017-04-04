@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "GIKGyroDemoController.h"
+#import "GIKGLViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -19,9 +21,13 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (IBAction)gyroPositionTest:(id)sender {
+- (IBAction)plainTest:(id)sender {
     GIKGyroDemoController *con = [[GIKGyroDemoController alloc] init];
     [self.navigationController pushViewController:con animated:YES];
+}
+- (IBAction)panoramaTest:(id)sender {
+    GIKGLViewController *vc = [[GIKGLViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

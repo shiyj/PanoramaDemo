@@ -9,6 +9,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GIKGyroDemoController">
             <connections>
                 <outlet property="crMotionView" destination="TUw-cy-sGd" id="mxc-GB-MSq"/>
+                <outlet property="imgView" destination="wU8-Wg-A2i" id="MYD-4U-THJ"/>
                 <outlet property="promotionLabel" destination="bnE-iv-Sz3" id="50O-DE-ZdH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -26,21 +27,46 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUw-cy-sGd" customClass="CRMotionView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIN-3b-tT8">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TUw-cy-sGd" customClass="CRMotionView">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wU8-Wg-A2i"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0w-RE-Qmy">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="0rR-sI-KIo"/>
+                                <constraint firstAttribute="height" constant="1" id="TnY-YE-gzf"/>
+                            </constraints>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="TUw-cy-sGd" firstAttribute="leading" secondItem="WIN-3b-tT8" secondAttribute="leading" id="0Zy-en-qX0"/>
+                        <constraint firstItem="wU8-Wg-A2i" firstAttribute="top" secondItem="Q0w-RE-Qmy" secondAttribute="bottom" constant="4" id="0sk-e9-tXd"/>
+                        <constraint firstAttribute="bottom" secondItem="wU8-Wg-A2i" secondAttribute="bottom" id="4An-6k-VZf"/>
+                        <constraint firstAttribute="trailing" secondItem="wU8-Wg-A2i" secondAttribute="trailing" id="4s9-Nh-hGv"/>
+                        <constraint firstItem="Q0w-RE-Qmy" firstAttribute="centerY" secondItem="WIN-3b-tT8" secondAttribute="centerY" id="IiC-R7-IRa"/>
+                        <constraint firstItem="Q0w-RE-Qmy" firstAttribute="centerX" secondItem="WIN-3b-tT8" secondAttribute="centerX" id="oQj-KE-RWJ"/>
+                        <constraint firstItem="wU8-Wg-A2i" firstAttribute="leading" secondItem="WIN-3b-tT8" secondAttribute="leading" id="sTM-2H-bGG"/>
+                        <constraint firstItem="Q0w-RE-Qmy" firstAttribute="top" secondItem="TUw-cy-sGd" secondAttribute="bottom" constant="4" id="upw-g3-qD5"/>
+                        <constraint firstAttribute="trailing" secondItem="TUw-cy-sGd" secondAttribute="trailing" id="wDM-tj-RyB"/>
+                        <constraint firstItem="TUw-cy-sGd" firstAttribute="top" secondItem="WIN-3b-tT8" secondAttribute="top" id="xV4-U3-z6e"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="TUw-cy-sGd" secondAttribute="trailing" id="Krf-L1-2VB"/>
+                <constraint firstAttribute="trailing" secondItem="WIN-3b-tT8" secondAttribute="trailing" id="FRX-65-gSm"/>
+                <constraint firstItem="WIN-3b-tT8" firstAttribute="top" secondItem="bnE-iv-Sz3" secondAttribute="bottom" id="Hid-Fa-QWa"/>
                 <constraint firstItem="bnE-iv-Sz3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="NcW-WV-Jus"/>
-                <constraint firstItem="TUw-cy-sGd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dfe-kG-BiI"/>
                 <constraint firstAttribute="trailing" secondItem="bnE-iv-Sz3" secondAttribute="trailing" constant="16" id="lV6-ek-sqq"/>
+                <constraint firstAttribute="bottom" secondItem="WIN-3b-tT8" secondAttribute="bottom" id="tMJ-QX-Ayx"/>
                 <constraint firstItem="bnE-iv-Sz3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="te1-ih-GMM"/>
-                <constraint firstItem="TUw-cy-sGd" firstAttribute="top" secondItem="bnE-iv-Sz3" secondAttribute="bottom" constant="14" id="xNX-05-p9e"/>
-                <constraint firstAttribute="bottom" secondItem="TUw-cy-sGd" secondAttribute="bottom" constant="10" id="zda-Cr-sBQ"/>
+                <constraint firstItem="WIN-3b-tT8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yhh-EN-uer"/>
             </constraints>
-            <point key="canvasLocation" x="40.5" y="59.5"/>
+            <point key="canvasLocation" x="40" y="59"/>
         </view>
     </objects>
 </document>
