@@ -43,7 +43,10 @@
                                     <constraint firstAttribute="height" constant="44" id="OGe-BF-uHR"/>
                                     <constraint firstAttribute="width" constant="213" id="Wn8-Bn-HXm"/>
                                 </constraints>
-                                <state key="normal" title="环绕全景测试"/>
+                                <state key="normal" title="中心全景VR测试"/>
+                                <connections>
+                                    <action selector="panoramaVRTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2U-PM-JwB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpC-PW-8jV">
                                 <constraints>

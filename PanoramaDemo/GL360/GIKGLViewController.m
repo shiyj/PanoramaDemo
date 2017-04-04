@@ -29,7 +29,7 @@
     [panoramaView setTouchToPan:NO];
     [panoramaView setPinchToZoom:YES];
     [panoramaView setShowTouches:NO];
-    [panoramaView setVRMode:NO];
+    [panoramaView setVRMode:self.isVRMode];
     [self setView:panoramaView];
     self.panoramaView = panoramaView;
 }

@@ -29,6 +29,11 @@
     GIKGLViewController *vc = [[GIKGLViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+- (IBAction)panoramaVRTest:(id)sender {
+    GIKGLViewController *vc = [[GIKGLViewController alloc] init];
+    vc.isVRMode = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

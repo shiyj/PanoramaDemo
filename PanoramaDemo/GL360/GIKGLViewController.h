@@ -10,5 +10,5 @@
 #import <GLKit/GLKit.h>
 
 @interface GIKGLViewController : GLKViewController
-
+@property (nonatomic,assign) BOOL isVRMode;
 @end
