@@ -14,6 +14,11 @@
 		4EFFA5151E933F9600D2D3B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFFA5141E933F9600D2D3B9 /* Assets.xcassets */; };
 		4EFFA5181E933F9600D2D3B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EFFA5161E933F9600D2D3B9 /* LaunchScreen.storyboard */; };
 		4EFFA5231E933F9600D2D3B9 /* PanoramaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFA5221E933F9600D2D3B9 /* PanoramaDemoUITests.m */; };
+		4EFFA5311E9340E600D2D3B9 /* GIKGyroDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFA52F1E9340E600D2D3B9 /* GIKGyroDemoController.m */; };
+		4EFFA5321E9340E600D2D3B9 /* GIKGyroDemoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EFFA5301E9340E600D2D3B9 /* GIKGyroDemoController.xib */; };
+		4EFFA5351E93415600D2D3B9 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EFFA5341E93415600D2D3B9 /* CoreMotion.framework */; };
+		4EFFA53B1E934DD800D2D3B9 /* CRMotionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFA5381E934DD800D2D3B9 /* CRMotionView.m */; };
+		4EFFA53C1E934DD800D2D3B9 /* UIScrollView+CRScrollIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFA53A1E934DD800D2D3B9 /* UIScrollView+CRScrollIndicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,14 @@
 		4EFFA51E1E933F9600D2D3B9 /* PanoramaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanoramaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFFA5221E933F9600D2D3B9 /* PanoramaDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanoramaDemoUITests.m; sourceTree = "<group>"; };
 		4EFFA5241E933F9600D2D3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EFFA52E1E9340E600D2D3B9 /* GIKGyroDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GIKGyroDemoController.h; sourceTree = "<group>"; };
+		4EFFA52F1E9340E600D2D3B9 /* GIKGyroDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GIKGyroDemoController.m; sourceTree = "<group>"; };
+		4EFFA5301E9340E600D2D3B9 /* GIKGyroDemoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GIKGyroDemoController.xib; sourceTree = "<group>"; };
+		4EFFA5341E93415600D2D3B9 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		4EFFA5371E934DD800D2D3B9 /* CRMotionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRMotionView.h; sourceTree = "<group>"; };
+		4EFFA5381E934DD800D2D3B9 /* CRMotionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRMotionView.m; sourceTree = "<group>"; };
+		4EFFA5391E934DD800D2D3B9 /* UIScrollView+CRScrollIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CRScrollIndicator.h"; sourceTree = "<group>"; };
+		4EFFA53A1E934DD800D2D3B9 /* UIScrollView+CRScrollIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CRScrollIndicator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EFFA5351E93415600D2D3B9 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +80,7 @@
 				4EFFA5071E933F9600D2D3B9 /* PanoramaDemo */,
 				4EFFA5211E933F9600D2D3B9 /* PanoramaDemoUITests */,
 				4EFFA5061E933F9600D2D3B9 /* Products */,
+				4EFFA5331E93415600D2D3B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +96,8 @@
 		4EFFA5071E933F9600D2D3B9 /* PanoramaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4EFFA5361E934DD800D2D3B9 /* CRMotionView */,
+				4EFFA52D1E9340C300D2D3B9 /* Gyro */,
 				4EFFA50B1E933F9600D2D3B9 /* AppDelegate.h */,
 				4EFFA50C1E933F9600D2D3B9 /* AppDelegate.m */,
 				4EFFA50E1E933F9600D2D3B9 /* ViewController.h */,
@@ -109,6 +126,35 @@
 				4EFFA5241E933F9600D2D3B9 /* Info.plist */,
 			);
 			path = PanoramaDemoUITests;
+			sourceTree = "<group>";
+		};
+		4EFFA52D1E9340C300D2D3B9 /* Gyro */ = {
+			isa = PBXGroup;
+			children = (
+				4EFFA52E1E9340E600D2D3B9 /* GIKGyroDemoController.h */,
+				4EFFA52F1E9340E600D2D3B9 /* GIKGyroDemoController.m */,
+				4EFFA5301E9340E600D2D3B9 /* GIKGyroDemoController.xib */,
+			);
+			path = Gyro;
+			sourceTree = "<group>";
+		};
+		4EFFA5331E93415600D2D3B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EFFA5341E93415600D2D3B9 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EFFA5361E934DD800D2D3B9 /* CRMotionView */ = {
+			isa = PBXGroup;
+			children = (
+				4EFFA5371E934DD800D2D3B9 /* CRMotionView.h */,
+				4EFFA5381E934DD800D2D3B9 /* CRMotionView.m */,
+				4EFFA5391E934DD800D2D3B9 /* UIScrollView+CRScrollIndicator.h */,
+				4EFFA53A1E934DD800D2D3B9 /* UIScrollView+CRScrollIndicator.m */,
+			);
+			path = CRMotionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +244,7 @@
 				4EFFA5181E933F9600D2D3B9 /* LaunchScreen.storyboard in Resources */,
 				4EFFA5151E933F9600D2D3B9 /* Assets.xcassets in Resources */,
 				4EFFA5131E933F9600D2D3B9 /* Main.storyboard in Resources */,
+				4EFFA5321E9340E600D2D3B9 /* GIKGyroDemoController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,8 +263,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EFFA5101E933F9600D2D3B9 /* ViewController.m in Sources */,
+				4EFFA53B1E934DD800D2D3B9 /* CRMotionView.m in Sources */,
 				4EFFA50D1E933F9600D2D3B9 /* AppDelegate.m in Sources */,
 				4EFFA50A1E933F9600D2D3B9 /* main.m in Sources */,
+				4EFFA53C1E934DD800D2D3B9 /* UIScrollView+CRScrollIndicator.m in Sources */,
+				4EFFA5311E9340E600D2D3B9 /* GIKGyroDemoController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

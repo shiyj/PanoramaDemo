@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="f3l-BB-nGx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,74 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toc-cU-V8S">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="HX5-Po-6ra"/>
+                                    <constraint firstAttribute="height" constant="30" id="eHH-Uu-G7M"/>
+                                </constraints>
+                                <state key="normal" title="陀螺仪测试"/>
+                                <connections>
+                                    <action selector="gyroPositionTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIb-Ae-AuS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08d-eH-shl">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="mLN-G7-0vj"/>
+                                    <constraint firstAttribute="height" constant="30" id="noV-mz-yX6"/>
+                                </constraints>
+                                <state key="normal" title="中心全景测试"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPL-VO-VaF">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OGe-BF-uHR"/>
+                                    <constraint firstAttribute="width" constant="213" id="Wn8-Bn-HXm"/>
+                                </constraints>
+                                <state key="normal" title="环绕全景测试"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpC-PW-8jV">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="58w-DQ-fSQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="8Em-R6-pZc"/>
+                                </constraints>
+                                <state key="normal" title="图片组测试"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="08d-eH-shl" firstAttribute="top" secondItem="toc-cU-V8S" secondAttribute="bottom" constant="8" id="05k-tn-aJV"/>
+                            <constraint firstItem="NPL-VO-VaF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MEH-Q5-IqZ"/>
+                            <constraint firstItem="toc-cU-V8S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PWG-zF-PJ1"/>
+                            <constraint firstItem="NPL-VO-VaF" firstAttribute="top" secondItem="08d-eH-shl" secondAttribute="bottom" constant="8" id="Wrn-aF-GBZ"/>
+                            <constraint firstItem="08d-eH-shl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c5c-vT-Y7l"/>
+                            <constraint firstItem="MpC-PW-8jV" firstAttribute="top" secondItem="NPL-VO-VaF" secondAttribute="bottom" constant="8" id="f6y-cz-1Tk"/>
+                            <constraint firstItem="toc-cU-V8S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="oOS-Vi-eTI"/>
+                            <constraint firstItem="MpC-PW-8jV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wFM-Hb-bhI"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="axM-jS-YDJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="svM-gW-ljp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f3l-BB-nGx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yzX-QK-gA2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Xs2-a8-p1l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2BF-FX-EA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256.80000000000001" y="777.66116941529242"/>
         </scene>
     </scenes>
 </document>
