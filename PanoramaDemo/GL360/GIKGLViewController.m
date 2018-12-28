@@ -21,14 +21,14 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     PanoramaView *panoramaView = [[PanoramaView alloc] init];
-    UIImage *img = [UIImage imageNamed:@"park_2048.jpg"];
+    UIImage *img = [UIImage imageNamed:@"scene1_compressed.jpg"];
     [panoramaView setImage:img];
 //    	[panoramaView setImageWithName:@"park_2048.jpg"];
 //        [panoramaView setImageWithName:@"鱼眼全景.jpg"];
-    [panoramaView setOrientToDevice:YES];
-    [panoramaView setTouchToPan:NO];
+    [panoramaView setOrientToDevice:NO];
+    [panoramaView setTouchToPan:YES];
     [panoramaView setPinchToZoom:YES];
-    [panoramaView setShowTouches:NO];
+    [panoramaView setShowTouches:YES];
     [panoramaView setVRMode:self.isVRMode];
     [self setView:panoramaView];
     self.panoramaView = panoramaView;

@@ -137,6 +137,11 @@
 		4EFFA6301E93AD2F00D2D3B9 /* tt_0108_图层-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EFFA5C11E93AD2F00D2D3B9 /* tt_0108_图层-3.png */; };
 		4EFFA6311E93AD2F00D2D3B9 /* tt_0109_图层-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EFFA5C21E93AD2F00D2D3B9 /* tt_0109_图层-2.png */; };
 		4EFFA6321E93AD2F00D2D3B9 /* tt_0110_图层-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EFFA5C31E93AD2F00D2D3B9 /* tt_0110_图层-1.png */; };
+		983E955421D5C4CA009C783E /* scene1_compressed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 983E955321D5C4CA009C783E /* scene1_compressed.jpg */; };
+		983E955621D5C565009C783E /* pc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 983E955521D5C565009C783E /* pc.jpg */; };
+		98F6F76B1FBC352900551332 /* DragMoveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F6F76A1FBC352800551332 /* DragMoveTableViewController.m */; };
+		98F6F76F1FBC358400551332 /* BJZJCarPositionShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F6F76D1FBC358400551332 /* BJZJCarPositionShowCell.m */; };
+		98F6F7701FBC358400551332 /* BJZJCarPositionShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98F6F76E1FBC358400551332 /* BJZJCarPositionShowCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,6 +296,13 @@
 		4EFFA5C11E93AD2F00D2D3B9 /* tt_0108_图层-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tt_0108_图层-3.png"; sourceTree = "<group>"; };
 		4EFFA5C21E93AD2F00D2D3B9 /* tt_0109_图层-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tt_0109_图层-2.png"; sourceTree = "<group>"; };
 		4EFFA5C31E93AD2F00D2D3B9 /* tt_0110_图层-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tt_0110_图层-1.png"; sourceTree = "<group>"; };
+		983E955321D5C4CA009C783E /* scene1_compressed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scene1_compressed.jpg; sourceTree = "<group>"; };
+		983E955521D5C565009C783E /* pc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pc.jpg; sourceTree = "<group>"; };
+		98F6F7691FBC352800551332 /* DragMoveTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragMoveTableViewController.h; sourceTree = "<group>"; };
+		98F6F76A1FBC352800551332 /* DragMoveTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragMoveTableViewController.m; sourceTree = "<group>"; };
+		98F6F76C1FBC358400551332 /* BJZJCarPositionShowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJZJCarPositionShowCell.h; sourceTree = "<group>"; };
+		98F6F76D1FBC358400551332 /* BJZJCarPositionShowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJZJCarPositionShowCell.m; sourceTree = "<group>"; };
+		98F6F76E1FBC358400551332 /* BJZJCarPositionShowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BJZJCarPositionShowCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +348,7 @@
 		4EFFA5071E933F9600D2D3B9 /* PanoramaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				98F6F7681FBC34ED00551332 /* DragMove */,
 				4EFFA53D1E935B3A00D2D3B9 /* GL360 */,
 				4EFFA5361E934DD800D2D3B9 /* CRMotionView */,
 				4EFFA52D1E9340C300D2D3B9 /* Gyro */,
@@ -416,6 +429,8 @@
 		4EFFA5481E93687000D2D3B9 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				983E955521D5C565009C783E /* pc.jpg */,
+				983E955321D5C4CA009C783E /* scene1_compressed.jpg */,
 				4EFFA5491E93687000D2D3B9 /* equirectangular-projection-lines.png */,
 				4EFFA54A1E93687000D2D3B9 /* park_2048.jpg */,
 				4EFFA54B1E93687000D2D3B9 /* 鱼眼全景.jpg */,
@@ -541,6 +556,18 @@
 			path = tt;
 			sourceTree = "<group>";
 		};
+		98F6F7681FBC34ED00551332 /* DragMove */ = {
+			isa = PBXGroup;
+			children = (
+				98F6F7691FBC352800551332 /* DragMoveTableViewController.h */,
+				98F6F76A1FBC352800551332 /* DragMoveTableViewController.m */,
+				98F6F76C1FBC358400551332 /* BJZJCarPositionShowCell.h */,
+				98F6F76D1FBC358400551332 /* BJZJCarPositionShowCell.m */,
+				98F6F76E1FBC358400551332 /* BJZJCarPositionShowCell.xib */,
+			);
+			path = DragMove;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -590,7 +617,7 @@
 				TargetAttributes = {
 					4EFFA5041E933F9600D2D3B9 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 25CN362K53;
+						DevelopmentTeam = KALDLDG24C;
 						ProvisioningStyle = Automatic;
 					};
 					4EFFA51D1E933F9600D2D3B9 = {
@@ -632,6 +659,7 @@
 				4EFFA6031E93AD2F00D2D3B9 /* tt_0063_图层-48.png in Resources */,
 				4EFFA5F01E93AD2F00D2D3B9 /* tt_0044_图层-67.png in Resources */,
 				4EFFA5C51E93AD2F00D2D3B9 /* tt_0001_图层-110.png in Resources */,
+				983E955421D5C4CA009C783E /* scene1_compressed.jpg in Resources */,
 				4EFFA6041E93AD2F00D2D3B9 /* tt_0064_图层-47.png in Resources */,
 				4EFFA6091E93AD2F00D2D3B9 /* tt_0069_图层-42.png in Resources */,
 				4EFFA5D71E93AD2F00D2D3B9 /* tt_0019_图层-92.png in Resources */,
@@ -642,6 +670,7 @@
 				4EFFA5CB1E93AD2F00D2D3B9 /* tt_0007_图层-104.png in Resources */,
 				4EFFA5D21E93AD2F00D2D3B9 /* tt_0014_图层-97.png in Resources */,
 				4EFFA6101E93AD2F00D2D3B9 /* tt_0076_图层-35.png in Resources */,
+				983E955621D5C565009C783E /* pc.jpg in Resources */,
 				4EFFA6251E93AD2F00D2D3B9 /* tt_0097_图层-14.png in Resources */,
 				4EFFA5F51E93AD2F00D2D3B9 /* tt_0049_图层-62.png in Resources */,
 				4EFFA5FB1E93AD2F00D2D3B9 /* tt_0055_图层-56.png in Resources */,
@@ -687,6 +716,7 @@
 				4EFFA54E1E93687000D2D3B9 /* 鱼眼全景.jpg in Resources */,
 				4EFFA5F71E93AD2F00D2D3B9 /* tt_0051_图层-60.png in Resources */,
 				4EFFA5E81E93AD2F00D2D3B9 /* tt_0036_图层-75.png in Resources */,
+				98F6F7701FBC358400551332 /* BJZJCarPositionShowCell.xib in Resources */,
 				4EFFA60A1E93AD2F00D2D3B9 /* tt_0070_图层-41.png in Resources */,
 				4EFFA6181E93AD2F00D2D3B9 /* tt_0084_图层-27.png in Resources */,
 				4EFFA5F21E93AD2F00D2D3B9 /* tt_0046_图层-65.png in Resources */,
@@ -762,12 +792,14 @@
 			files = (
 				4EFFA5101E933F9600D2D3B9 /* ViewController.m in Sources */,
 				4EFFA53B1E934DD800D2D3B9 /* CRMotionView.m in Sources */,
+				98F6F76F1FBC358400551332 /* BJZJCarPositionShowCell.m in Sources */,
 				4EFFA50D1E933F9600D2D3B9 /* AppDelegate.m in Sources */,
 				4EFFA5451E935C2F00D2D3B9 /* PanoramaView.m in Sources */,
 				4EFFA50A1E933F9600D2D3B9 /* main.m in Sources */,
 				4EFFA53C1E934DD800D2D3B9 /* UIScrollView+CRScrollIndicator.m in Sources */,
 				4EFFA5401E935B6B00D2D3B9 /* GIKGLViewController.m in Sources */,
 				4EFFA5311E9340E600D2D3B9 /* GIKGyroDemoController.m in Sources */,
+				98F6F76B1FBC352900551332 /* DragMoveTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,7 +935,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 25CN362K53;
+				DEVELOPMENT_TEAM = KALDLDG24C;
 				INFOPLIST_FILE = PanoramaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geoinker.PanoramaDemo;
@@ -915,7 +947,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 25CN362K53;
+				DEVELOPMENT_TEAM = KALDLDG24C;
 				INFOPLIST_FILE = PanoramaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geoinker.PanoramaDemo;
@@ -966,6 +998,7 @@
 				4EFFA5291E933F9600D2D3B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EFFA52A1E933F9600D2D3B9 /* Build configuration list for PBXNativeTarget "PanoramaDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -974,6 +1007,7 @@
 				4EFFA52C1E933F9600D2D3B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

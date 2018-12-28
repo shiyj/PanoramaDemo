@@ -77,7 +77,7 @@
         _currentIndex = max/2.0;
         _allImages = [NSMutableArray new];
         for (NSInteger i=1; i<=max; i++) {
-            NSString *name = [NSString stringWithFormat:@"tt_%04d_图层-%d",max - i,i];
+            NSString *name = [NSString stringWithFormat:@"tt_%04zd_图层-%zd",max - i,i];
             UIImage *img = [UIImage imageNamed:name];
             if (img) {
                 [_allImages addObject:img];
