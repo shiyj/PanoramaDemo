@@ -35,6 +35,22 @@
 - (void)testExample {
     // Use recording to get started writing UI tests.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortrait;
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.buttons[@"广角正全景测试"] tap];
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationFaceUp;
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortrait;
+    [[[[app.navigationBars[@"GIKGyroDemo"] childrenMatchingType:XCUIElementTypeButton] matchingIdentifier:@"Back"] elementBoundByIndex:0] tap];
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationFaceUp;
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortrait;
+    [app.buttons[@"中心全景测试"] tap];
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationFaceUp;
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortrait;
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationFaceUp;
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortrait;
+    [[[[app.navigationBars[@"GIKGLView"] childrenMatchingType:XCUIElementTypeButton] matchingIdentifier:@"Back"] elementBoundByIndex:0] tap];
+    
 }
 
 @end
